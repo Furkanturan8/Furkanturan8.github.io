@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat/static/Montserrat-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat/static/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat/static/Montserrat-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat/static/Montserrat-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat/static/Montserrat-Bold.ttf");
+    font-weight: bold;
+}
+
+*{
+    font-family: "Montserrat","sans-serrif";
+    box-sizing: border-box;
+    color: #424242;
+}
+
+body{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.app_header{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; /*en sağa ve en sola elemanları hizalar*/
+    align-items: center; /*dikeyde ortalama yapar*/
+    height: 80px;
+}
+
+.app_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app_logo .app__title{
+    margin-right: 1rem;
+}
+
+.app__links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.app__links li{
+    margin-right: 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.app__links li.active{
+    font-weight: 600;
+    color: #5a47ab;
+}
+
+.app__showcase{
+    display: flex;
+    margin: 5rem 0;
+}
+
+.app__showcase-info{
+    flex: 6;
+    padding: 0 3rem;
+}
+
+.app__showcase-info h1,h3{
+    font-size: 52px;
+    margin: 0;
+}
+
+.app__showcase-info h1{
+    color: #d05270;
+    font-weight: bold;
+}
+
+.app__showcase-info h3{
+    font-weight: 400;
+}
+
+.app__showcase-info p{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.app__showcase-image{
+    flex: 4;
+    padding: 0 3rem;
+
+}
+
+.app__links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.app__links .app__link{
+    color: white;
+    font-size: 12px;
+    width: 30%;
+    height: 60px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__links .app__link img{
+    margin-right: 2rem;
+}
+
+.app__links .app__link.twitter{
+    background-color: #47ACDF;
+
+}
+
+.app__links .app__link.linkedn{
+    background-color: #1275B1;
+
+}
+
+.app__links .app__link.medium{
+    background-color: #000000;
+
+}
+
+.app__blog-categories{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.app__blog-categories .item{
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.app__blog-categories .item.active{
+    color:#d05270;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #d05270;
+    padding: 0 2rem;
+    padding-bottom: 0.5rem;
+}
