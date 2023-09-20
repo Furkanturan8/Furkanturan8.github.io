@@ -139,7 +139,11 @@ nav .menu .menu-button:hover {
     }
 
     .menu .menu-button{
-        display: none;
+        border-radius: 30px;
+        column-gap:20px ;
+        font-size: x-small;
+        padding: 6px 12px;
+     /*   display: none;*/
     }
 
     .menu ul{
